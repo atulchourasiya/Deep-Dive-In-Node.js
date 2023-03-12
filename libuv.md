@@ -95,6 +95,6 @@ The implementation of asynchronous functions in C++ binaries used by Node.js may
 In summary, the event loop in Node.js is responsible for processing asynchronous I/O operations, and it uses libuv to delegate blocking I/O operations to worker threads from the thread pool, to avoid blocking the event loop. The decision to use the thread pool is made by Node.js and libuv based on various factors, such as the size of the data being transmitted and the current load on the system.
 
 ## Summary
-Libuv is a C library used by node.js on top of V8. It helps to process blocking request or a asynchronous function/c++ binary like cryptography, file system or DNS related task by putting it to another thread other than the main thread where the event loop is executing then these worker thread that may belongs to other core returns the result to main thread.
+Libuv is a C library used by node.js on top of V8. It helps to process blocking request or a asynchronous function/c++ binary like cryptography, file system or DNS related task by putting it to another thread other than the main thread (where the event loop is executing) then these worker thread that may belongs to other core returns the result to main thread. all the process handled implicitly by node.js and libuv.
 
- The operating system assigns threads to available cores based on the current load on each core, the priority of the threads, and other factors. The goal is to optimize the use of available processing resources and improve performance. 
+The operating system assigns threads to available cores based on the current load on each core, the priority of the threads, and other factors. The goal is to optimize the use of available processing resources and improve performance. 
