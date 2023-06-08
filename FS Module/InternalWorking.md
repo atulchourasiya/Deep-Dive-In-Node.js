@@ -13,4 +13,4 @@ FS module has various function one of them is readfilesync. As we execute readfi
 Well v8 is just a software written mostly in C++. In the C++ implemention of function we can see object which uses v8 internally. node.js make use of v8 to understand what is being told from the js world to the node.js world. even  in the translation of js to node.js of the C++ you obviously need v8 to kickin and helps node to understand what really happen.
 
 ## Summary
-v8 helps node.js to understand js code or to make sense of actual js code
+v8 helps node.js to understand js code or to make sense of actual js code. fs.readfile or fs.readfilesync is implemented on C++ and exposed to js script world.
