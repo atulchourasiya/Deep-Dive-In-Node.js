@@ -1,0 +1,15 @@
+{
+  "name": "cluster-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Cluster.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set UV_THREADPOOL_SIZE=2 & node ExampleA.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
